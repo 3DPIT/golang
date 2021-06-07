@@ -1,0 +1,11 @@
+## 2021년 06월02일 golang  학습 내용
+### 1. 완료조건
+- [x] visual Code golang 설치후 컴파일 환경 이해
+- [x] golang 조건문과 반복문 문법의 이해
+- [x] golang 함수와 포인터 문법의 이해
+### 2. 상세내용
+- golang에서 조건문과 반복문 다른 언어와 비교하면서 실습 진행
+- golang 함수와 포인터에 대한 이해와 실습 진행
+### 3. 질문
+### 4. 참여자
+[HyungHo.Ko](http://wish.mirero.co.kr/HyungHo.Ko)

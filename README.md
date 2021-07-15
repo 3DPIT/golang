@@ -32,7 +32,7 @@
 - [x]  컴맹을 위한 Go 언어`21.07.15` 기초 프로그래밍 강좌 25 - Slice 를 slice 해보자
 - [x]  컴맹을 위한 Go 언어`21.07.15` 프로그래밍 강좌 보충수업 - Slice 심화
 - [x]  컴맹을 위한 Go 언어`21.07.15` 프로그래밍 강좌 보충수업 - Instance 란
-- [ ]  컴맹을 위한 Go 언어 기초 프로그래밍 강좌 26 - Linked List
+- [x]  컴맹을 위한 Go 언어`21.07.15` 기초 프로그래밍 강좌 26 - Linked List
 - [ ]  컴맹을 위한 Go 언어 기초 프로그래밍 강좌 27 - Double Linked List
 - [ ]  컴맹을 위한 Go 언어 기초 프로그래밍 강좌 28 - Packaging 과 Stack, Queue
 - [ ]  컴맹을 위한 Go 언어 기초 프로그래밍 강좌 29 - Tree
@@ -59,14 +59,12 @@
 - [ ]  컴맹을 위한 Go 언어 프로그래밍 기초 강좌 50 - 마지막 강좌
 
 ## 0715
-
 - 00.Slice & Instance Study
   - 슬라이스와 인스턴스 공부 자료와 테스트 코드
-
-
 - 01.MockTest Study
   - Mock 테스트 스터디 자료와 테스트 코드  
-
+- 02. Linked List
+  - Linked List 스터디 자료와 테스트 코드  
 
 
 

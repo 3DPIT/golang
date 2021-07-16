@@ -67,10 +67,8 @@
   - Linked List 스터디 자료와 테스트 코드  
 ## 0716  
 - 0. Interface mock만들어 test확인하기  
-
   - 인터페이스 적용해서 mock만들어 테스트 
 - 1. 모듈과 패키지  
-
   - Go Lang 모듈과 패키지 스터디 자료  
 
 

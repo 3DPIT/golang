@@ -59,16 +59,18 @@
 - [ ]  컴맹을 위한 Go 언어 프로그래밍 기초 강좌 50 - 마지막 강좌
 
 ## 0715
-- 00.Slice & Instance Study
+- 0.Slice & Instance Study
   - 슬라이스와 인스턴스 공부 자료와 테스트 코드
-- 01.MockTest Study
+- 1.MockTest Study
   - Mock 테스트 스터디 자료와 테스트 코드  
-- 02. Linked List
+- 2.Linked List
   - Linked List 스터디 자료와 테스트 코드  
 ## 0716  
-- 00. Interface mock만들어 test확인하기  
+- 0. Interface mock만들어 test확인하기  
+
   - 인터페이스 적용해서 mock만들어 테스트 
-- 01. 모듈과 패키지  
+- 1. 모듈과 패키지  
+
   - Go Lang 모듈과 패키지 스터디 자료  
 
 

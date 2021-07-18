@@ -11,29 +11,29 @@ a := []int{1,2,3}
 a:= make([]int, 3)
 a:= make([]int, 0,8)
 ```
-![image-20210715111106585](2021년 07월15일 Go Lang 캡슐화 임베딩.assets/image-20210715111106585.png)
+![image-20210715111106585](2021년 07월15일 Go Lang Slice.assets/image-20210715111106585.png)
 - a:= make([]int , 3, 8)의 의미는 동적배열은 capacity라고 미리 공간을 실제로도 추가될때 딱 그 크기에 맞춰서 늘어나는게 아니고 적절하게 좀더 많이 추가가 되는데 이것을 capacity이고 실제로 사용자가 사용하는 공간 Length라고 한다. 
 - 위처럼 구현을 했다면 8개의 공간을 가졌지만 3개까지 사용하고 추가로 더 늘어나면 8개까지 쓸수 있는것이고 그이상이되면 또 공간을 늘려주는식으로 동작한다. 
 ## 실습  
 -   ***var a []int**
-![image-20210715111603261](2021년 07월15일 Go Lang 캡슐화 임베딩.assets/image-20210715111603261.png)
+![image-20210715111603261](2021년 07월15일 Go Lang Slice.assets/image-20210715111603261.png)
 - **a := []int{1, 2, 3, 4, 5}**
-![image-20210715111638118](2021년 07월15일 Go Lang 캡슐화 임베딩.assets/image-20210715111638118.png)
+![image-20210715111638118](2021년 07월15일 Go Lang Slice.assets/image-20210715111638118.png)
 - **a := make([]int, 0, 8)**
-![image-20210715111817721](2021년 07월15일 Go Lang 캡슐화 임베딩.assets/image-20210715111817721.png)
+![image-20210715111817721](2021년 07월15일 Go Lang Slice.assets/image-20210715111817721.png)
 ## 슬라이스 추가법
 ```go
 a := []int{}
 a = append(a,1)
 ```
-![image-20210715112220153](2021년 07월15일 Go Lang 캡슐화 임베딩.assets/image-20210715112220153.png)
+![image-20210715112220153](2021년 07월15일 Go Lang Slice.assets/image-20210715112220153.png)
 ## append 추가시 서로 다른 슬라이스
-![image-20210715112845559](2021년 07월15일 Go Lang 캡슐화 임베딩.assets/image-20210715112845559.png)
+![image-20210715112845559](2021년 07월15일 Go Lang Slice.assets/image-20210715112845559.png)
 ## 같은 슬라이스인 경우 
-![image-20210715113033900](2021년 07월15일 Go Lang 캡슐화 임베딩.assets/image-20210715113033900.png)
+![image-20210715113033900](2021년 07월15일 Go Lang Slice.assets/image-20210715113033900.png)
 - 공간이 넉넉하면 같은 공간을 쓰고 그게 아니면 다른 메모리를 사용해서 추가한다.
 ## 주의  
-![image-20210715113341329](2021년 07월15일 Go Lang 캡슐화 임베딩.assets/image-20210715113341329.png)
+![image-20210715113341329](2021년 07월15일 Go Lang Slice.assets/image-20210715113341329.png)
 - 위에처럼 당연한 결과가 나온다 이유는 같은 메모리에 있기 때문에  바뀌는것이다.
 - 진짜 개발할때 주의해야함 
 ## 슬라이스 자르기  
@@ -44,11 +44,11 @@ a[4:8] // a[StartIdx : End Idx]
 // 결과는 [5,6,7,8]이 나온다.
 ```
 ## 부분 자르기
-![image-20210715114249864](2021년 07월15일 Go Lang 캡슐화 임베딩.assets/image-20210715114249864.png)
+![image-20210715114249864](2021년 07월15일 Go Lang Slice.assets/image-20210715114249864.png)
 ## 시작 위치만 지정하기  
-![image-20210715114359298](2021년 07월15일 Go Lang 캡슐화 임베딩.assets/image-20210715114359298.png)
+![image-20210715114359298](2021년 07월15일 Go Lang Slice.assets/image-20210715114359298.png)
 ## 끝위치만 지정하기  
-![image-20210715114455683](2021년 07월15일 Go Lang 캡슐화 임베딩.assets/image-20210715114455683.png)
+![image-20210715114455683](2021년 07월15일 Go Lang Slice.assets/image-20210715114455683.png)
 
 ## Slice와 Instance  
 ## Slice
@@ -59,7 +59,7 @@ a[4:8] // a[StartIdx : End Idx]
   - lend : 개수
   - cap : 최대 개수
 
-![image-20210715131609376](2021년 07월15일 Go Lang 캡슐화 임베딩.assets/image-20210715131609376.png)
+![image-20210715131609376](2021년 07월15일 Go Lang Slice.assets/image-20210715131609376.png)
 
 - pointer는 메모리 주소 번지 값으로 갖는 변수
 
@@ -102,18 +102,18 @@ func main() {
 }
 ```
 ## 과정  
-![image-20210715134657020](2021년 07월15일 Go Lang 캡슐화 임베딩.assets/image-20210715134657020.png)
+![image-20210715134657020](2021년 07월15일 Go Lang Slice.assets/image-20210715134657020.png)
 ## 결과  
-![image-20210715133657416](2021년 07월15일 Go Lang 캡슐화 임베딩.assets/image-20210715133657416.png)
+![image-20210715133657416](2021년 07월15일 Go Lang Slice.assets/image-20210715133657416.png)
 ## Instance 
 ## 값타입 assign
-![image-20210715135624293](2021년 07월15일 Go Lang 캡슐화 임베딩.assets/image-20210715135624293.png)
-![image-20210715135837215](2021년 07월15일 Go Lang 캡슐화 임베딩.assets/image-20210715135837215.png)
+![image-20210715135624293](2021년 07월15일 Go Lang Slice.assets/image-20210715135624293.png)
+![image-20210715135837215](2021년 07월15일 Go Lang Slice.assets/image-20210715135837215.png)
 - 여기서 보면 b의 age만 바뀌었는데 이것을 value type 값타입이라고 한다.
 ## 주소타입 assign  
 - 이것을 var b *Student, b=&a 이면 값이 어떻게 될까?
-  ![image-20210715140105306](2021년 07월15일 Go Lang 캡슐화 임베딩.assets/image-20210715140105306.png)
-  ![image-20210715140350433](2021년 07월15일 Go Lang 캡슐화 임베딩.assets/image-20210715140350433.png)
+  ![image-20210715140105306](2021년 07월15일 Go Lang Slice.assets/image-20210715140105306.png)
+  ![image-20210715140350433](2021년 07월15일 Go Lang Slice.assets/image-20210715140350433.png)
 - b가 a를 가리키고 있다.이런 형태를 reference type이라고 함 \
 ```go
 package main
@@ -147,7 +147,7 @@ func main() {
 //주소 타입 결과
 {bbb 20 10}
 ```
-![image-20210715141116431](2021년 07월15일 Go Lang 캡슐화 임베딩.assets/image-20210715141116431.png)
+![image-20210715141116431](2021년 07월15일 Go Lang Slice.assets/image-20210715141116431.png)
 - golang의 struct는 property만 가진게 아니고 즉 오브젝트와 같이 메소드 기능도 가짐
 
 ```go

@@ -1,8 +1,8 @@
-# # 2021년 07월15일  Linked List  
+# 2021년 07월15일  Linked List  
 - Linked : 연결된 
 - List : 나열하다. 
 - 배열을 붙어있고 링크드 리스트는 떨어져있는 것이 연결되어 있다. 
-- 연결 방법은 포인터로 연결   
+- 연결 방법은 포인터로 연결   `
 <img src="2021년 07월15일  Linked List.assets/image-20210715212809758.png" alt="image-20210715212809758" style="zoom:50%;" />
 ## Linked List 구현하기 첫 번째 방법  
 ```go

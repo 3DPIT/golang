@@ -32,7 +32,7 @@
 - [x]  컴맹을 위한 Go 언어`21.07.15` 프로그래밍 강좌 보충수업 - Slice 심화
 - [x]  컴맹을 위한 Go 언어`21.07.15` 프로그래밍 강좌 보충수업 - Instance 란
 - [x]  컴맹을 위한 Go 언어`21.07.15` 기초 프로그래밍 강좌 26 - Linked List
-- [x]  컴맹을 위한 Go 언어`21.07.17` 기초 프로그래밍 강좌 27 - Double Linked List
+- [ ]  컴맹을 위한 Go 언어 기초 프로그래밍 강좌 27 - Double Linked List
 - [ ]  컴맹을 위한 Go 언어 기초 프로그래밍 강좌 28 - Packaging 과 Stack, Queue
 - [ ]  컴맹을 위한 Go 언어 기초 프로그래밍 강좌 29 - Tree
 - [ ]  컴맹을 위한 Go 언어 기초 프로그래밍 강좌 30 - Tree DFS

@@ -26,8 +26,8 @@ func (c *Calender) Use(date int) string {
 ```
 mockgen -destination=mocks/mockRunner.go -package=mocks fileMonitoring/Mirero.Go.InterfaceMock/ICalender ICalender
 ```
-- 이렇게 진행을 하면 mocks폴더가 생성되고 mockRunner.go가 만들어진다.
-![image-20210716145959883](2021년 07월16일 Interface mock만들어 test확인하기.assets/image-20210716145959883.png)
+- 이렇게 진행을 하면 mocks폴더가 생성되고 mockRunner.go가 만들어진다. 
+![image-20210716145959883](2021년07월16일Interfacemock만들어test확인하기.assets/image-20210716145959883.png)
 ## Main문에 적용하기  
 ## main.go  
 ```go
@@ -100,7 +100,7 @@ func TestChangeCalender(t *testing.T) {
 ```
 - 대략 매개변수가 제대로 들어갔는지 확인
 - 리턴하는 값이 맞는지 확인 
-![image-20210716144459497](2021년 07월16일 Interface mock만들어 test확인하기.assets/image-20210716144459497.png)
+![image-20210716144459497](2021년07월16일Interfacemock만들어test확인하기.assets/image-20210716144459497.png)
 - 실습 결과 매게변수가 잘들어갔는지 파악하거나 리턴값 확인시 사용 할 수 있을 것 같다.
 
 ## 테스트 코드  

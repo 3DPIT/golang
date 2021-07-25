@@ -29,8 +29,8 @@ func main() {
 ```
 - 우선 이렇게 구현하고 실행  
 - http://localhost:8080 입력해서 서버에 들어가본다.  
-- 원래는 3000이였는데 안되면 8080으로 해보면됨다. 
-![image-20210725224523463](2021년07월25일-GoLang_WebHandler.assets/image-20210725224523463.png)
+- 원래는 3000이였는데 안되면 8080으로 해보면 된다.   
+![image-20210725224523463](2021년07월25일-GoLang_WebHandler.assets/image-20210725224523463.png)  
 - HandleFunc 이것은 어떤 리퀘스트가 들어왔을때 어떤 일을 할 것인지 핸들러 등록하는것   
 - func(w http.ResponseWriter, r *http.Request)  이것은 정해진 펑션이고  w http.ResponseWriter은 Response를 Writing할 수 있는 w 인자가 하나있고, 
 -  r *http.Request 사용자가 전달한 Request정보를 가지고 있는 r   
@@ -56,7 +56,7 @@ func main() {
 }
 ```
 - localhost:8080/bar의 출력을 봐보자     
-![image-20210725225205940](2021년07월25일-GoLang_WebHandler.assets/image-20210725225205940.png)
+![image-20210725225205940](2021년07월25일-GoLang_WebHandler.assets/image-20210725225205940.png)  
 ## WEB1-3  
 ``` go
 package main
@@ -84,8 +84,8 @@ func main() {
 	http.ListenAndServe(":8080", nil)
 }
 ```
-![image-20210725225555461](2021년07월25일-GoLang_WebHandler.assets/image-20210725225555461.png)
+![image-20210725225555461](2021년07월25일-GoLang_WebHandler.assets/image-20210725225555461.png)  
 - 처음에 했던 두개는 핸들러를 펑션 형태로 등록하는것  
 - 인스턴스 형태로 등록할 때는 3번쨰 방법을 사용  
-![image-20210725225741040](2021년07월25일-GoLang_WebHandler.assets/image-20210725225741040.png)
-- 위와 같이 핸들러는 인터페이스이고 함수를 하나를 가진 인터페이스이다.
+![image-20210725225741040](2021년07월25일-GoLang_WebHandler.assets/image-20210725225741040.png)  
+- 위와 같이 핸들러는 인터페이스이고 함수를 하나를 가진 인터페이스이다.  

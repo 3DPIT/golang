@@ -217,13 +217,13 @@ act.ExecutionTime()
 	.ShouldNotExceed(600.Milliseconds());
 ```
 ## 500 <= 600 성공  
-![image-20210610220606041](2021년 06월11일 C# UnitTest.assets/image-20210610220606041.png)
+![image-20210610220606041](2021년06월11일C#UnitTest.assets/image-20210610220606041.png)
 ## 500 <= 300 실패  
 ```
 act.ExecutionTime()
 	.ShouldNotExceed(300.Milliseconds());
 ```
-![image-20210610220646393](2021년 06월11일 C# UnitTest.assets/image-20210610220646393.png)
+![image-20210610220646393](2021년06월11일C#UnitTest.assets/image-20210610220646393.png)
 # Async 프로젝트  
 ```
 (자세히 볼 필요 있음)
@@ -268,7 +268,7 @@ public async Task<int> AddAsync(int x, int y)
  }
 ```
 ## Arrange 구현하기
-![image-20210610222020863](2021년 06월11일 C# UnitTest.assets/image-20210610222020863.png)
+![image-20210610222020863](2021년06월11일C#UnitTest.assets/image-20210610222020863.png)
 ```
 프로덕션 코드 
 public class Calculator
@@ -382,7 +382,7 @@ public void Should_Add_From_MemberData(int firstNumber, int secondNumber, int ex
 
 이렇게 사용할 수 있다. 
 ```
-![image-20210610225218471](2021년 06월11일 C# UnitTest.assets/image-20210610225218471.png)
+![image-20210610225218471](2021년06월11일C#UnitTest.assets/image-20210610225218471.png)
 ## MemberData Attribute의 MemberType 속성  
 ```
 MemberType 속성을 통해 클래스 단위로 데이터를 분리 할 수 있음
@@ -410,7 +410,7 @@ MemberType 속성을 통해 클래스 단위로 데이터를 분리 할 수 있�
      Assert.Equal(ex, result);
  }
 ```
-![image-20210610230540551](2021년 06월11일 C# UnitTest.assets/image-20210610230540551.png)
+![image-20210610230540551](2021년06월11일C#UnitTest.assets/image-20210610230540551.png)
 ## Hybrid 유형  
 ```
 (무언가 에러가 발생)
@@ -512,17 +512,17 @@ public void Should_Add(int firstNumber, int secondNumber, int expectedResult)
 ```
 항상 복사 속성을 설정(빌드 경로에 파일을 복사시키기 위함)
 ```
-![image-20210610232544502](2021년 06월11일 C# UnitTest.assets/image-20210610232544502.png)
+![image-20210610232544502](2021년06월11일C#UnitTest.assets/image-20210610232544502.png)
 ## 단위 테스트 결과 확인  
 ```
 CSV 파일에 있는 모든 데이터로 테스트 결과를 확인
 ```
 
-![image-20210610232759141](2021년 06월11일 C# UnitTest.assets/image-20210610232759141.png)
+![image-20210610232759141](2021년06월11일C#UnitTest.assets/image-20210610232759141.png)
 # ExternalJsonData 프로젝트  
 ## Json Nuget패키지 설치   
 (버전 문제로 안되는것 같음)
-![image-20210610232916295](2021년 06월11일 C# UnitTest.assets/image-20210610232916295.png)
+![image-20210610232916295](2021년06월11일C#UnitTest.assets/image-20210610232916295.png)
 ## json 모든 데이터 사용  
 ```
         [Theory]
@@ -588,9 +588,9 @@ namespace HowTo_04_ArrangeExternalJsonData.Tests
         ...
 ```
 ## Json 파일 데이터 로드  
-![image-20210610233439323](2021년 06월11일 C# UnitTest.assets/image-20210610233439323.png)![image-20210610233458973](2021년 06월11일 C# UnitTest.assets/image-20210610233458973.png)
+![image-20210610233439323](2021년06월11일C#UnitTest.assets/image-20210610233439323.png)![image-20210610233458973](2021년06월11일C#UnitTest.assets/image-20210610233458973.png)
 # 단위 테스트 함수 라이프 사이클 이해  
-![image-20210611084946834](2021년 06월11일 C# UnitTest.assets/image-20210611084946834.png)
+![image-20210611084946834](2021년06월11일C#UnitTest.assets/image-20210611084946834.png)
 ## writeLine 프로젝트  
 ```
 자동으로 생성자에 테스트 출력을 위한 객체가 전달
@@ -649,11 +649,11 @@ ITestOutHelper로 이용한 출력 결과는 테스트 출력 창에 표시
     }
 
 ```
-![image-20210611085804821](2021년 06월11일 C# UnitTest.assets/image-20210611085804821.png)
+![image-20210611085804821](2021년06월11일C#UnitTest.assets/image-20210611085804821.png)
 ```
 (테스트 출력창이 안보여서 확인은 불가함)
 ```
-![image-20210611085830940](2021년 06월11일 C# UnitTest.assets/image-20210611085830940.png)
+![image-20210611085830940](2021년06월11일C#UnitTest.assets/image-20210611085830940.png)
 ```
 보면 위와 같이 Test Name:에 나온다고 한다.
 ```
@@ -663,8 +663,8 @@ ITestOutHelper로 이용한 출력 결과는 테스트 출력 창에 표시
 단위 테스크 클래스 생성 횟수 : 단위 테스트 함수 개수 1 : 1
 클래스 단위로 디버깅은 두가지 방법이 있음
 ```
-![image-20210611090105018](2021년 06월11일 C# UnitTest.assets/image-20210611090105018.png)
-![image-20210611090153381](2021년 06월11일 C# UnitTest.assets/image-20210611090153381.png)
+![image-20210611090105018](2021년06월11일C#UnitTest.assets/image-20210611090105018.png)
+![image-20210611090153381](2021년06월11일C#UnitTest.assets/image-20210611090153381.png)
 ## FixtureSetupTeardown 프로젝트  
 ```
 모든 단위 테스트에서 함께 사용할 클래스(CalculatorFixure)를 만든다.
@@ -763,7 +763,7 @@ CalculatorFixture는 한번만 생성
     }
 ```
 ## ExecuteOrder 프로젝트
-![image-20210611091333507](2021년 06월11일 C# UnitTest.assets/image-20210611091333507.png)
+![image-20210611091333507](2021년06월11일C#UnitTest.assets/image-20210611091333507.png)
 ```
 프로덕션 코드 
     public class Calculator
@@ -813,7 +813,7 @@ Calculator_FloatSpec
 Calculator_FloatSpec 클래스에는 클래스 실행 순서를 테스트하기위해
 Collection Attribute로 클래스 표시 이름을 변경
 ```
-![image-20210611091751630](2021년 06월11일 C# UnitTest.assets/image-20210611091751630.png)
+![image-20210611091751630](2021년06월11일C#UnitTest.assets/image-20210611091751630.png)
 ```
 단위테스트를 갖고 있는 클래스 실행 순서를 조정할 수 있다.
 ITestCollectionOrderer 인터페이스 구현 클래스의 OrderTestCollections 함수를
@@ -848,7 +848,7 @@ using Xunit;
 직접 실행해보면 intSpce 먼저 가고 FloatSpec으로 간다.
 ```
 # Toy 프로그램
-![image-20210611093137251](2021년 06월11일 C# UnitTest.assets/image-20210611093137251.png)
+![image-20210611093137251](2021년06월11일C#UnitTest.assets/image-20210611093137251.png)
 ## ConsoleApp 프로젝트
 ```
 테스트 대상 함수 (DoWork)
@@ -867,29 +867,29 @@ public class SuperConsole
 물리적 의존을 갖고 있는 콘솔 출력을 제어
 Console.WriteLine 함수로 출력되는 텍스트는 Console.SetOut으로 받을 수 있다.
 ```
-![image-20210611093707117](2021년 06월11일 C# UnitTest.assets/image-20210611093707117.png)
-![image-20210611093814388](2021년 06월11일 C# UnitTest.assets/image-20210611093814388.png)
+![image-20210611093707117](2021년06월11일C#UnitTest.assets/image-20210611093707117.png)
+![image-20210611093814388](2021년06월11일C#UnitTest.assets/image-20210611093814388.png)
 ## 테스트 대상 함수(Communicate)  
 ```
 Console.ReadLine 함수 역시 물리적인 콘솔에 의존하기 때문에 
 설계 관점에서는 테스트 자동화할 수 없는 함수 
 ```
-![image-20210611093934474](2021년 06월11일 C# UnitTest.assets/image-20210611093934474.png)
+![image-20210611093934474](2021년06월11일C#UnitTest.assets/image-20210611093934474.png)
 ##  Console.WriteLine과 ReadLine 함수 테스트하기  
 ```
 물리적 의존을 갖고 있는 콘솔 입/출력을 제어
 Console.Writeline 함수로 출력되는 테스트는 Console.SetOut으로 받을 수 있음
 Console.Readline 함수로 입력되는 테스트는 Console.SetIn으로 전달 시킬 수 있음
 ```
-![image-20210611094058313](2021년 06월11일 C# UnitTest.assets/image-20210611094058313.png)
-![image-20210611094135562](2021년 06월11일 C# UnitTest.assets/image-20210611094135562.png)
+![image-20210611094058313](2021년06월11일C#UnitTest.assets/image-20210611094058313.png)
+![image-20210611094135562](2021년06월11일C#UnitTest.assets/image-20210611094135562.png)
 ##  FileSystemApp프로젝트  
 ## 테스트 자동화할 수 없는 구현  
 ```
 Directory.GetFiles와 File.ReadAllText 함수는 물리적인 파일 시스템에 의존
 물리적인 의존성으로 인해 언제, 어디서나 동일한 테스트 결과를 얻을 수 없음
 ```
-![image-20210611094502051](2021년 06월11일 C# UnitTest.assets/image-20210611094502051.png)
+![image-20210611094502051](2021년06월11일C#UnitTest.assets/image-20210611094502051.png)
 ## 테스트 자동화할 수 있는 구현  
 ```
 Directory.GetFile와 File.ReadAllText 함수가 아닌 IFileSystem 인터페이스를
@@ -901,7 +901,7 @@ Directory.GetFile와 File.ReadAllText 함수가 아닌 IFileSystem 인터페이�
 
 모의 파일 시스템을 사용하기 위한 패키지를 설치
 ```
-![image-20210611094917859](2021년 06월11일 C# UnitTest.assets/image-20210611094917859.png)
+![image-20210611094917859](2021년06월11일C#UnitTest.assets/image-20210611094917859.png)
 ```
 using System.IO.Abstractions;
 
@@ -933,7 +933,7 @@ public class ComponentTestable
 위에 설치한것이라 이것까지 설치해야한다.
 ```
 
-![image-20210611095026931](2021년 06월11일 C# UnitTest.assets/image-20210611095026931.png)
+![image-20210611095026931](2021년06월11일C#UnitTest.assets/image-20210611095026931.png)
 
 ```
 [Fact]
@@ -972,8 +972,8 @@ public void ShouldNot_Throw_NotSupportedException()
     act.ShouldNotThrow();
 }
 ```
-![image-20210611095747720](2021년 06월11일 C# UnitTest.assets/image-20210611095747720.png)
-![image-20210611095754520](2021년 06월11일 C# UnitTest.assets/image-20210611095754520.png)
+![image-20210611095747720](2021년06월11일C#UnitTest.assets/image-20210611095747720.png)
+![image-20210611095754520](2021년06월11일C#UnitTest.assets/image-20210611095754520.png)
 ```
 제대로 동작은 하지만 에러구문이 있어서 다시봐야할듯
 ```

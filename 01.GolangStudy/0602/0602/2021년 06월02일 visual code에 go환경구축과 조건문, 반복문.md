@@ -1,27 +1,27 @@
 ## 2021년 06월02일 visual code에 go환경 구축 조건문, 반복문  
 ## 고랭 설치  
 [고랭 설치](https://golang.org/) 링크   
-![image-20210602085141900](2021년 06월02일 visual code에 go환경구축과 조건문, 반복문.assets/image-20210602085141900.png)
+![image-20210602085141900](2021년06월02일visualcode에go환경구축과조건문,반복문.assets/image-20210602085141900.png)
 
 ```
 여기에 들어가서 Download Go를 눌러줍니다.
 ```
-![image-20210602084735678](2021년 06월02일 visual code에 go환경구축과 조건문, 반복문.assets/image-20210602084735678.png)
+![image-20210602084735678](2021년06월02일visualcode에go환경구축과조건문,반복문.assets/image-20210602084735678.png)
 ```
 현재 만든 디렉토리에서 code. 해서 비주얼 코드에 들어간다.
 그러면 설치가 진행되고 아래와 같이 화면이 뜨게 된다.
 ```
-![image-20210602085308551](2021년 06월02일 visual code에 go환경구축과 조건문, 반복문.assets/image-20210602085308551.png)
+![image-20210602085308551](2021년06월02일visualcode에go환경구축과조건문,반복문.assets/image-20210602085308551.png)
 ## Extentions 부분에 가서 go 설치  
-![image-20210602085557034](2021년 06월02일 visual code에 go환경구축과 조건문, 반복문.assets/image-20210602085557034.png)
+![image-20210602085557034](2021년06월02일visualcode에go환경구축과조건문,반복문.assets/image-20210602085557034.png)
 ```
 ctrl + ` 누르면 터미널 창이 아래 켜진다.
 ```
 ```
 go version 명령어를 입력해서 go가 제대로 설치 되어 있는지 확인해보자.
 ```
-![image-20210602090608207](2021년 06월02일 visual code에 go환경구축과 조건문, 반복문.assets/image-20210602090608207.png)
-![image-20210602090412742](2021년 06월02일 visual code에 go환경구축과 조건문, 반복문.assets/image-20210602090412742.png)
+![image-20210602090608207](2021년06월02일visualcode에go환경구축과조건문,반복문.assets/image-20210602090608207.png)
+![image-20210602090412742](2021년06월02일visualcode에go환경구축과조건문,반복문.assets/image-20210602090412742.png)
 ```go
 package main
 
@@ -44,12 +44,12 @@ hello.exe
 ./hello 경우 리눅스나 맥os
 hello.exe는 윈도우 환경인데 비주얼코드에서는 ./hello로 실행 된다. 
 ```
-![image-20210602091115623](2021년 06월02일 visual code에 go환경구축과 조건문, 반복문.assets/image-20210602091115623.png)
+![image-20210602091115623](2021년06월02일visualcode에go환경구축과조건문,반복문.assets/image-20210602091115623.png)
 ## 한번에 실행하기  
 ```go
 go run hello.go
 ```
-![image-20210602091210333](2021년 06월02일 visual code에 go환경구축과 조건문, 반복문.assets/image-20210602091210333.png)
+![image-20210602091210333](2021년06월02일visualcode에go환경구축과조건문,반복문.assets/image-20210602091210333.png)
 ```
 위와 같이 명령을 하더라도 빠르게 실행이 가능하다.
 여기까지 설치는 완료
@@ -78,7 +78,7 @@ func main(){
 	fmt.Println(year)
 }
 ```
-![image-20210602092442707](../visual code에 go 설치.assets/image-20210602092442707.png)
+![image-20210602092442707](2021년06월02일visualcode에go환경구축과조건문,반복문.assets/image-20210602092442707.png)
 ```
 우리가 이런식으로 변수 선언한것도 배웠기 때문에
 	now := time.Now()  //var now time.Time = time.Now()
@@ -111,7 +111,7 @@ func main() {
 	fmt.Println(year, month, day)
 }
 ```
-![image-20210602093140811](../visual code에 go 설치.assets/image-20210602093140811.png)
+![image-20210602093140811](2021년06월02일visualcode에go환경구축과조건문,반복문.assets/image-20210602093140811.png)
 ## Replacer  
 ```
 string 패키지의 Replacer는 부분 문자열을 찾아 해당 문자열을 
@@ -133,7 +133,7 @@ func main(){
 	fmt.Println(fixed)
 }
 ```
-![image-20210602093701845](../visual code에 go 설치.assets/image-20210602093701845.png)
+![image-20210602093701845](2021년06월02일visualcode에go환경구축과조건문,반복문.assets/image-20210602093701845.png)
 ```
 메서드 호출 문법을 보면 패키지 함수 호출 문법과 비슷하다.
 . (점)은 오른쪽에 무언가가 왼쪽의 무언가에 속해 있음을 나타냄
@@ -141,7 +141,7 @@ func main(){
 now.Year()
 replacer.Replace(broken)
 ```
-![image-20210602094309149](../visual code에 go 설치.assets/image-20210602094309149.png)
+![image-20210602094309149](2021년06월02일visualcode에go환경구축과조건문,반복문.assets/image-20210602094309149.png)
 ## 주석  
 ```
 우선 파일을 생성하면 소스코드 파일 가장 위에 프로그램에 대한 설명을 추가
@@ -229,7 +229,7 @@ response, err := http.Get("http://golang.org") //페이지를 못 가져 오면 
 즉,
 input, _ := reader.ReadString('\n')
 ```
-![image-20210602101645842](../visual code에 go 설치.assets/image-20210602101645842.png)
+![image-20210602101645842](2021년06월02일visualcode에go환경구축과조건문,반복문.assets/image-20210602101645842.png)
 ## 두 번째 옵션 : 에러 처리하기  
 ```
 위의 빈 식별자를 이용하면 쉽게 처리 할 수 있지만 진짜 error가 생겼을 때 알 수 없다.
@@ -240,7 +240,7 @@ main() 부분에서
 input, err := reader.ReadString('\n')
 log.Fatal(err)
 ```
-![image-20210602102150616](../visual code에 go 설치.assets/image-20210602102150616.png)
+![image-20210602102150616](2021년06월02일visualcode에go환경구축과조건문,반복문.assets/image-20210602102150616.png)
 ## 조건문  
 ```
 현재 위에 사진을 보게 되면 읽는데는 아무런 문제가 없는데 실행이 중단이 된다.
@@ -293,9 +293,9 @@ func main() {
 	fmt.Println(input) // 사용자가 입력한 값 출력
 }
 ```
-![image-20210602104943629](../visual code에 go 설치.assets/image-20210602104943629.png)
+![image-20210602104943629](2021년06월02일visualcode에go환경구축과조건문,반복문.assets/image-20210602104943629.png)
 ## 파일의 사이즈 정보 가져오기  
-![image-20210602105435533](../visual code에 go 설치.assets/image-20210602105435533.png)
+![image-20210602105435533](2021년06월02일visualcode에go환경구축과조건문,반복문.assets/image-20210602105435533.png)
 ```go
 package main
 
@@ -361,7 +361,7 @@ func main() {
 	fmt.Println(number, aString, "on", cString, lan)
 }
 ```
-![image-20210602111217771](../visual code에 go 설치.assets/image-20210602111217771.png)
+![image-20210602111217771](2021년06월02일visualcode에go환경구축과조건문,반복문.assets/image-20210602111217771.png)
 ## 문자열을 숫자로 변환하기  
 ```go
 //pass_fail 프로그램은 성적의 합격 여부를 알려 줍니다.
@@ -409,7 +409,7 @@ fmt.Println(strings.TrimSpace(s))
 
 즉, input = strings.TrimSpace(input)
 ```
-![image-20210602112541811](../visual code에 go 설치.assets/image-20210602112541811.png)
+![image-20210602112541811](2021년06월02일visualcode에go환경구축과조건문,반복문.assets/image-20210602112541811.png)
 ## 문자열 숫자로바꾸기  
 ```
 strconv 패키지의 ParseFloat 함수를 이용하여 
@@ -444,7 +444,7 @@ if true {
 그냥 쉽게 내 지역에서 태어나면 그 지역안에 있는 곳에서는 뭐든 할 수 있지만
 그게 아니라면 아무것도 못한다 정도 ?
 ```
-![image-20210602114125859](../visual code에 go 설치.assets/image-20210602114125859.png)
+![image-20210602114125859](2021년06월02일visualcode에go환경구축과조건문,반복문.assets/image-20210602114125859.png)
 ## 단축 변수 선언에서 변수는 단 한 번만 새로 선언  
 ```
 이말이 무슨 말인가 했는데 
@@ -545,13 +545,13 @@ if guess < target{
 	fmt.Println("Oops, Your guess was HIGH")
 }
 ```
-![image-20210602142045677](../visual code에 go 설치.assets/image-20210602142045677.png)
+![image-20210602142045677](2021년06월02일visualcode에go환경구축과조건문,반복문.assets/image-20210602142045677.png)
 ## 반복문  
 ```
 이제 마지막으로 10번까지 추측할 수 있게 반복 시켜야한다.
 반복문도 c언어에서 () 빠진거라 쉽다.
 ```
-![image-20210602142458210](../visual code에 go 설치.assets/image-20210602142458210.png)
+![image-20210602142458210](2021년06월02일visualcode에go환경구축과조건문,반복문.assets/image-20210602142458210.png)
 ## 초기화문 과 후처리문  
 ```
 이것은 while()문 같이 쓴다는 것 같은데

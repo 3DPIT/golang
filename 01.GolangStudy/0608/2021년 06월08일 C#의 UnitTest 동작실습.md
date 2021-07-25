@@ -16,13 +16,13 @@ unitTest 또는 테스트 자동화라고 불린다.
 단시간 내에 이를 파악하고 바로 잡을 수 있도록 해줌
 ```
 ##  xunit 설치  
-![image-20210608151603167](2021년 06월08일 C#의 UnitTest 동작실습.assets/image-20210608151603167.png)
+![image-20210608151603167](2021년06월08일C#의UnitTest동작실습.assets/image-20210608151603167.png)
 ```
 NuGet 패키지 관리로 들어갑니다.
 xunit이라고 입력을 하고 xunit에서 일단 낮은 버전을 2.10으로 설치합시다.
 
 ```
-![image-20210608151729315](2021년 06월08일 C#의 UnitTest 동작실습.assets/image-20210608151729315.png)
+![image-20210608151729315](2021년06월08일C#의UnitTest동작실습.assets/image-20210608151729315.png)
 ## 클래스 라이브러리로 진행  
 ```c#
 using System;
@@ -43,11 +43,11 @@ namespace AddLib
 }
 
 ```
-![image-20210608153514631](2021년 06월08일 C#의 UnitTest 동작실습.assets/image-20210608153514631.png)
+![image-20210608153514631](2021년06월08일C#의UnitTest동작실습.assets/image-20210608153514631.png)
 ```
 새 프로젝트 추가해서
 ```
-![image-20210608180106149](2021년 06월08일 C#의 UnitTest 동작실습.assets/image-20210608180106149.png)
+![image-20210608180106149](2021년06월08일C#의UnitTest동작실습.assets/image-20210608180106149.png)
 
 ```c#
 using System;
@@ -65,12 +65,12 @@ namespace TestProject1
     }
 }
 ```
-![image-20210608180149913](2021년 06월08일 C#의 UnitTest 동작실습.assets/image-20210608180149913.png)
+![image-20210608180149913](2021년06월08일C#의UnitTest동작실습.assets/image-20210608180149913.png)
 ```
 여기서 이렇게 나오는데 여기서 우리는
 최근에 만든 Xunit부분에 종속성에 오른쪽 클릭하고 프로젝트 참조 추가를 눌러줌
 ```
-![image-20210608180207750](2021년 06월08일 C#의 UnitTest 동작실습.assets/image-20210608180207750.png)
+![image-20210608180207750](2021년06월08일C#의UnitTest동작실습.assets/image-20210608180207750.png)
 ```
 체크를 해주고 확인 해줍니다.
 ```
@@ -109,12 +109,12 @@ namespace TestProject1
 
 //같은 클래스에 있지만 이 두개의 매소드는 독립적이다.
 ```
-![image-20210608154544298](2021년 06월08일 C#의 UnitTest 동작실습.assets/image-20210608154544298.png)
-![image-20210608154606743](2021년 06월08일 C#의 UnitTest 동작실습.assets/image-20210608154606743.png)
+![image-20210608154544298](2021년06월08일C#의UnitTest동작실습.assets/image-20210608154544298.png)
+![image-20210608154606743](2021년06월08일C#의UnitTest동작실습.assets/image-20210608154606743.png)
 ```
 위와 같이 창이 생성이 됩니다.
 ```
-![image-20210608154750025](2021년 06월08일 C#의 UnitTest 동작실습.assets/image-20210608154750025.png)
+![image-20210608154750025](2021년06월08일C#의UnitTest동작실습.assets/image-20210608154750025.png)
 ```
  현재 에러가 생기는게 보이는데 일부러 에러를 발생하게 한것이기 때문에 그렇다.
  여기서 보면 지금은 두개라서 금방 오류를 찾아낼 수 있지만 그것이 천개 또는 만개라 생각했을때
@@ -156,20 +156,20 @@ V 는 예외가 없어서 성공이다.
 [참고 사이트](https://hijuworld.tistory.com/31)
 
 ## 자동화
-![image-20210608175436413](2021년 06월08일 C#의 UnitTest 동작실습.assets/image-20210608175436413.png)
+![image-20210608175436413](2021년06월08일C#의UnitTest동작실습.assets/image-20210608175436413.png)
 ```
 위에서 exe 경로를 확인하고 
 ```
-![image-20210608175556187](2021년 06월08일 C#의 UnitTest 동작실습.assets/image-20210608175556187.png)
+![image-20210608175556187](2021년06월08일C#의UnitTest동작실습.assets/image-20210608175556187.png)
 ```
 현재 테스트 코드가 있는 위치를 알고 나서 cmd 창을 켜줍니다.
 
  C:\Users\km.park\.nuget\packages\xunit.runner.console\2.4.1\tools\net472\xunit.console.exe C:\Users\km.park\source\repos\ClassLibrary1\ClassLibrary4\bin\Debug\ClassLibrary4.dll
 ```
 ## 실패하는 경우
-![image-20210608175706337](2021년 06월08일 C#의 UnitTest 동작실습.assets/image-20210608175706337.png)
+![image-20210608175706337](2021년06월08일C#의UnitTest동작실습.assets/image-20210608175706337.png)
 ## 성공하는 경우
-![image-20210608175802224](2021년 06월08일 C#의 UnitTest 동작실습.assets/image-20210608175802224.png)
+![image-20210608175802224](2021년06월08일C#의UnitTest동작실습.assets/image-20210608175802224.png)
 ```
 중요한것은 .net4.7.2로 했으면 당연한거지만 test 코드라 프로덕션 코드가 일치 해야 자동화할때
 실행이 된다.

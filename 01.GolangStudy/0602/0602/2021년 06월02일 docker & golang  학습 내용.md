@@ -7,5 +7,3 @@
 - golang에서 조건문과 반복문 다른 언어와 비교하면서 실습 진행
 - golang 함수와 포인터에 대한 이해와 실습 진행
 ### 3. 질문
-### 4. 참여자
-[HyungHo.Ko](http://wish.mirero.co.kr/HyungHo.Ko)

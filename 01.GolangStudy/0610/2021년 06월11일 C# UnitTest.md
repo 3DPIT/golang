@@ -217,13 +217,13 @@ act.ExecutionTime()
 	.ShouldNotExceed(600.Milliseconds());
 ```
 ## 500 <= 600 성공  
-![image-20210610220606041](2021년 06월11일 C# UnitTest.assets/image-20210610220606041.png)
+![image-20210610220606041](2021년06월11일C#UnitTest.assets/image-20210610220606041.png)
 ## 500 <= 300 실패  
 ```
 act.ExecutionTime()
 	.ShouldNotExceed(300.Milliseconds());
 ```
-![image-20210610220646393](2021년 06월11일 C# UnitTest.assets/image-20210610220646393.png)
+![image-20210610220646393](2021년06월11일C#UnitTest.assets/image-20210610220646393.png)
 # Async 프로젝트  
 ```
 (자세히 볼 필요 있음)
@@ -268,7 +268,7 @@ public async Task<int> AddAsync(int x, int y)
  }
 ```
 ## Arrange 구현하기
-![image-20210610222020863](2021년 06월11일 C# UnitTest.assets/image-20210610222020863.png)
+![image-20210610222020863](2021년06월11일C#UnitTest.assets/image-20210610222020863.png)
 ```
 프로덕션 코드 
 public class Calculator
@@ -382,7 +382,7 @@ public void Should_Add_From_MemberData(int firstNumber, int secondNumber, int ex
 
 이렇게 사용할 수 있다. 
 ```
-![image-20210610225218471](2021년 06월11일 C# UnitTest.assets/image-20210610225218471.png)
+![image-20210610225218471](2021년06월11일C#UnitTest.assets/image-20210610225218471.png)
 ## MemberData Attribute의 MemberType 속성  
 ```
 MemberType 속성을 통해 클래스 단위로 데이터를 분리 할 수 있음
@@ -410,7 +410,7 @@ MemberType 속성을 통해 클래스 단위로 데이터를 분리 할 수 있�
      Assert.Equal(ex, result);
  }
 ```
-![image-20210610230540551](2021년 06월11일 C# UnitTest.assets/image-20210610230540551.png)
+![image-20210610230540551](2021년06월11일C#UnitTest.assets/image-20210610230540551.png)
 ## Hybrid 유형  
 ```
 (무언가 에러가 발생)
@@ -512,17 +512,17 @@ public void Should_Add(int firstNumber, int secondNumber, int expectedResult)
 ```
 항상 복사 속성을 설정(빌드 경로에 파일을 복사시키기 위함)
 ```
-![image-20210610232544502](2021년 06월11일 C# UnitTest.assets/image-20210610232544502.png)
+![image-20210610232544502](2021년06월11일C#UnitTest.assets/image-20210610232544502.png)
 ## 단위 테스트 결과 확인  
 ```
 CSV 파일에 있는 모든 데이터로 테스트 결과를 확인
 ```
 
-![image-20210610232759141](2021년 06월11일 C# UnitTest.assets/image-20210610232759141.png)
+![image-20210610232759141](2021년06월11일C#UnitTest.assets/image-20210610232759141.png)
 # ExternalJsonData 프로젝트  
 ## Json Nuget패키지 설치   
 (버전 문제로 안되는것 같음)
-![image-20210610232916295](2021년 06월11일 C# UnitTest.assets/image-20210610232916295.png)
+![image-20210610232916295](2021년06월11일C#UnitTest.assets/image-20210610232916295.png)
 ## json 모든 데이터 사용  
 ```
         [Theory]
@@ -589,5 +589,5 @@ namespace HowTo_04_ArrangeExternalJsonData.Tests
 ```
 ## Json 파일 데이터 로드  
 
-![image-20210610233439323](2021년 06월11일 C# UnitTest.assets/image-20210610233439323.png)![image-20210610233458973](2021년 06월11일 C# UnitTest.assets/image-20210610233458973.png)
+![image-20210610233439323](2021년06월11일C#UnitTest.assets/image-20210610233439323.png)![image-20210610233458973](2021년06월11일C#UnitTest.assets/image-20210610233458973.png)
 

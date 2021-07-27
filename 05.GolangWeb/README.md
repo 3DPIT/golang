@@ -9,7 +9,7 @@
   - 지금 관심있는 언어이기때문에 적용하고 싶어서 
 - 세부 학습 계획   
   - [x] `20210725` [Go 로 만드는 웹 - Web Handler](../05.GolangWeb/0725/2021년07월25일-GoLang_WebHandler.md)
-  - [x] `20210727` [Go 로 만드는 웹 2 - JSON Transfer](..\golang\05.GolangWeb\0727\2021년07월27일-GoLangWeb_JsonTransfer)
+  - [x] `20210727` [Go 로 만드는 웹 2 - JSON Transfer](..\05.GolangWeb\0727\2021년07월27일-GoLangWeb_JsonTransfer)
   - [ ] Go 로 만드는 웹 3 - Test 환경
   - [ ] Go 로 만드는 웹 4 - FILE upload
   - [ ] Go 로 만드는 웹 5 - RESTful API

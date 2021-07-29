@@ -12,7 +12,7 @@
   - [x] `20210727` [Go 로 만드는 웹 2 - JSON Transfer](../05.GolangWeb/0727/2021년07월27일-GoLangWeb_JsonTransfer.md)
   - [x] `20210728`[Go 로 만드는 웹 3 - Test 환경](../05.GolangWeb/0728/01.Test환경/2021년07월28일_GoLangWeb-Test환경.md)
   - [x] `20210728`[Go 로 만드는 웹 4 - FILE upload](../05.GolangWeb/0728/02.FileUpload/2021년07월28일_GoLangWeb-FileUpload.md)
-  - [ ] Go 로 만드는 웹 5 - RESTful API
+  - [x] `20210729`[Go 로 만드는 웹 5 - RESTful API](../05.GolangWeb/0729/1.RESTfulAPI1/2021년07월29일_GoLangWeb-RESTfulAPI1.md)
   - [ ] Go 로 만드는 웹 6 - RESTful API
   - [ ] Go 로 만드는 웹 7 - RESTful API
   - [ ] Go 로 만드는 웹 8 - RESTful API

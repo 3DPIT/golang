@@ -11,5 +11,5 @@
 - 유튜브 강의를 통한 기초 학습
 ## [05.GolangWeb](./05.GolangWeb)
 - Golang을 이용하여 서버 만들기
-## [06.C# & WPF & Golang](./06.C# & WPF & Golang)
+## [06.C#&WPF&Golang](./06.C#&WPF&Golang)
 - C#의 기초와 mvvm적용 WPF, 파일폴더모니터링(Golang) 학습

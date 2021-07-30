@@ -1,6 +1,6 @@
 # Golang을 위주로 정리   
 
-## [01.GolangStudy](../01.GolangStudy/)
+## [01.GolangStudy](./01.GolangStudy/)
 
 - Head First Go 책 학습 내용   
 ## [02.lsBeat](golang/02.lsBeat/)

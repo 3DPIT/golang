@@ -3,17 +3,17 @@
   -  2021-07-25(일) ~ 2021-08-dd(w)
 - 최종 목표 
   - 고랭 서버 구축해서 restful API 만들어 Todo리스트 배포 
-  - 이것을 응용해서 내가 만들고 싶은 웹 만들기  
+  - 이것을 응용해서 내가 만들고 싶은 웹또는 앱 만들기  
 - Golang 사용 하는 이유 
   - 백엔드에 최적화된 언어
-  - 지금 관심있는 언어이기때문에 적용하고 싶어서 
+  - 지금 관심있는 언어이기 때문에 적용하고 싶어서 
 - 세부 학습 계획   
   - [x] `20210725` [Go 로 만드는 웹 - Web Handler](../05.GolangWeb/0725/2021년07월25일-GoLang_WebHandler.md)
   - [x] `20210727` [Go 로 만드는 웹 2 - JSON Transfer](../05.GolangWeb/0727/2021년07월27일-GoLangWeb_JsonTransfer.md)
   - [x] `20210728`[Go 로 만드는 웹 3 - Test 환경](../05.GolangWeb/0728/01.Test환경/2021년07월28일_GoLangWeb-Test환경.md)
   - [x] `20210728`[Go 로 만드는 웹 4 - FILE upload](../05.GolangWeb/0728/02.FileUpload/2021년07월28일_GoLangWeb-FileUpload.md)
-  - [x] `20210729`[Go 로 만드는 웹 5 - RESTful API](../05.GolangWeb/0729/1.RESTfulAPI1/2021년07월29일_GoLangWeb-RESTfulAPI1.md)
-  - [ ] Go 로 만드는 웹 6 - RESTful API
+  - [x] `20210729`[Go 로 만드는 웹 5 - RESTful API](../05.GolangWeb/0729/01.RESTfulAPI1/2021년07월29일_GoLangWeb-RESTfulAPI1.md)
+  - [x] `20210801`[Go 로 만드는 웹 6 - RESTful API](../05.GolangWeb/0801/01.RESTfulAPI2/2021년08월01일_GoLangWeb-RESTfulAPI2.md)
   - [ ] Go 로 만드는 웹 7 - RESTful API
   - [ ] Go 로 만드는 웹 8 - RESTful API
   - [ ] Go 로 만드는 웹 9 - Decorator 패턴

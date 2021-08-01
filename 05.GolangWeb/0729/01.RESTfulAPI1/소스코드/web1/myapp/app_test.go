@@ -21,7 +21,8 @@ func TestIndex(t *testing.T) {
 	data, _ := ioutil.ReadAll(resp.Body)
 	assert.Equal("Hello World", string(data))
 }
-func TestUser(t *testing.T) {
+
+func TestUsers(t *testing.T) {
 	assert := assert.New(t)
 
 	ts := httptest.NewServer(NewHandler())
@@ -45,4 +46,10 @@ func TestGetUserInfo(t *testing.T) {
 	assert.Equal(http.StatusOK, resp.StatusCode)
 	data, _ := ioutil.ReadAll(resp.Body)
 	assert.Contains(string(data), "User Id:89")
+
+	resp, err = http.Get(ts.URL + "/users/56")
+	assert.NoError(err)
+	assert.Equal(http.StatusOK, resp.StatusCode)
+	data, _ = ioutil.ReadAll(resp.Body)
+	assert.Contains(string(data), "User Id:56")
 }

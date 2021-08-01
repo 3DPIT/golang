@@ -1,4 +1,4 @@
-## 2021년08월01일GoLangWeb_RESTfulAPI2
+## 2021년08월01일_GoLangWeb-RESTfulAPI2
 - 지난번에 Get해서 실제 id만 출력함
 - Create 즉,Post하는것을 만들어야 id의 UserInfo를 읽어올 수 있다.  
 ## POST 부분인 Create 부분에 대한 테스트 코드 작성  
@@ -17,7 +17,7 @@ func TestCreateUserInfo(t *testing.T) {
 }
 
 ```
-![image-20210801220018706](2021년08월01일GoLangWeb_RESTfulAPI2.assets/image-20210801220018706.png)
+![image-20210801220018706](2021년08월01일_GoLangWeb-RESTfulAPI2.assets/image-20210801220018706.png)
 - 현재 위와 같이 하면 저렇게 200을 원하는데 201이 나오게 된다. 
 - resp, err := http.Post(ts.URL+"/users", "application/json", 현재 이렇게 /users로 했는데 이때 어떤 매소드로 보내는것에 따라 즉, Get, Post에 따라서 핸들러가 달라져야한다. 
 - 여기서  핸들러는 이부분이다.   mux.HandleFunc("/users", userHandler)
@@ -60,7 +60,7 @@ func createUserHandler(w http.ResponseWriter, r *http.Request) {
 ```
 - 위와 같이 유저 struct를 생성
 - 우선 제이슨 읽어와서 에러면 리턴시키고 없으면 유저 생성 하는 소스이다. 
-![image-20210801221330335](2021년08월01일GoLangWeb_RESTfulAPI2.assets/image-20210801221330335.png)
+![image-20210801221330335](2021년08월01일_GoLangWeb-RESTfulAPI2.assets/image-20210801221330335.png)
 - 우선 테스트 코드가 통과한다
 ## 테스트코드 추가
 ```go
@@ -107,7 +107,7 @@ func getuserInfoHandler(w http.ResponseWriter, r *http.Request) {
 ```
 - 일단 무조건 통과시키기 위한 코드 
 - 그렇지만 getUser Test에서 에러 발생 
-![image-20210801223216687](2021년08월01일GoLangWeb_RESTfulAPI2.assets/image-20210801223216687.png)
+![image-20210801223216687](2021년08월01일_GoLangWeb-RESTfulAPI2.assets/image-20210801223216687.png)
 
 ```go
 func TestGetUserInfo(t *testing.T) {

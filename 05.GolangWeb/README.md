@@ -14,7 +14,7 @@
   - [x] `20210728`[Go 로 만드는 웹 4 - FILE upload](../05.GolangWeb/0728/02.FileUpload/2021년07월28일_GoLangWeb-FileUpload.md)
   - [x] `20210729`[Go 로 만드는 웹 5 - RESTful API](../05.GolangWeb/0729/01.RESTfulAPI1/2021년07월29일_GoLangWeb-RESTfulAPI1.md)
   - [x] `20210801`[Go 로 만드는 웹 6 - RESTful API](../05.GolangWeb/0801/01.RESTfulAPI2/2021년08월01일_GoLangWeb-RESTfulAPI2.md)
-  - [ ] Go 로 만드는 웹 7 - RESTful API
+  - [x] `20210802`[Go 로 만드는 웹 7 - RESTful API](../05.GolangWeb/0802/01.RESTfulAPI3/2021년08월02일_GoLangWeb-RESTfulAPI3.md)
   - [ ] Go 로 만드는 웹 8 - RESTful API
   - [ ] Go 로 만드는 웹 9 - Decorator 패턴
   - [ ] Go 로 만드는 웹 10 - Web Decorator Handler

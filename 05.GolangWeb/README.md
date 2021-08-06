@@ -17,7 +17,7 @@
   - [x] `20210802`[Go 로 만드는 웹 7 - RESTful API](../05.GolangWeb/0802/01.RESTfulAPI3/2021년08월02일_GoLangWeb-RESTfulAPI3.md)
   - [x] `20210804`[Go 로 만드는 웹 8 - RESTful API](../05.GolangWeb/0804/01.RESTfulAPI4/2021년08월04일_GoLangWeb-RESTfulAPI4.md)
   - [x] `20210805`[Go 로 만드는 웹 9 - Decorator 패턴](../05.GolangWeb/0805/01.Decorator/2021년08월05일_GoLangWeb-Decorator패턴.md)
-  - [ ] Go 로 만드는 웹 10 - Web Decorator Handler
+  - [x] `20210806`[Go 로 만드는 웹 10 - Web Decorator Handler](../05.GolangWeb/0806/01.WebDecoratorHandler/2021년08월06일_GoLangWeb-WebDecoratorHandler.md)
   - [ ] Go 로 만드는 웹 11 - Template
   - [ ] Go 로 만드는 웹 12 - Render, Pat, Negroni
   - [ ] Go 로 만드는 웹 13 - EventSource 를 이용한 채팅

@@ -69,7 +69,7 @@ func main() {
 ```
 
 - 우리가 만들 것 
-- `</head>`` 가 끝나는 부분위에 적으면된다.
+- `</head>` 가 끝나는 부분위에 적으면된다.
 
 ```javascript
     var $chatlog = $('#chat-log')

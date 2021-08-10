@@ -22,7 +22,7 @@
   - [x] `20210808`[Go 로 만드는 웹 12 - Render, Pat, Negroni](../05.GolangWeb/0808/01.Render,Pat,Negroni/2021년08월07일_GoLangWeb-Render,Pat,Negroni.md)
   - [x] `20210809`[Go 로 만드는 웹 13 - EventSource 를 이용한 채팅](../05.GolangWeb/0809/2021년08월09일_GoLangWeb-EventSource를이용한채팅.md)
   - [x] `20210809`[Go 로 만드는 웹 14 - EventSource 를 이용한 채팅](../05.GolangWeb/0809/2021년08월09일_GoLangWeb-EventSource를이용한채팅2.md)
-  - [ ] Go 로 만드는 웹 15 - OAuth 2.0
+  - [x] `20210810`[Go 로 만드는 웹 15 - OAuth 2.0](../05.GolangWeb/0810/01.OAuth2.0/2021년08월10일_GoLangWeb-OAuth2.0.md)
   - [ ] Go 로 만드는 웹 16 - Todo 웹
   - [ ] Go 로 만드는 웹 17 - Todo 웹
   - [ ] Go 로 만드는 웹 18 - Refactoring

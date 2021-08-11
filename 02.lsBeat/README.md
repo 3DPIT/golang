@@ -1,5 +1,5 @@
 ## LsBeat 만들기 
-## 0722
+## [0722](https://github.com/3DPIT/golang/tree/master/02.lsBeat/0722)
 - 0.findExt
   - path/filepath 패키지 이용해서 확장자 찾는 소스와 테스트코드
 - 1.regularExpressions
@@ -10,12 +10,6 @@
 ## 0727
 - [01.LsBeat네트워크](../02.lsBeat/0727/01.LsBeat네트워크/2021년07월27일LsBeat네트워크.md)
 - [02.키바나인덱스패턴](../02.lsBeat/0727/01.LsBeat네트워크/2021년07월27일LsBeat네트워크.md)
-
 ## 0811
-
 - [01.큐레이터설정 및 Cron](../02.lsBeat/0811/01.큐레이터설정및Cron/2021년08월11일_큐레이터설정Cron설정.md)
-<<<<<<< HEAD
-  - 큐레이터 설정하고 cron으로 자동화 진행
-=======
-  - 큐레이터 설정하고 cron으로 자동화 진행
->>>>>>> 46bca8bc493a10e3732f6e61d373112b989ae315
+큐레이터 설정하고 cron으로 자동화 진행

@@ -9,3 +9,8 @@
   - go get github.com/huandu/xstrings 패키지 이용하여 리버스 진행
 ## 0727
 - 01.LsBeat네트워크
+
+## 0811
+
+- 01.큐레이터설정 및 Cron
+  - 큐레이터 설정하고 cron으로 자동화 진행

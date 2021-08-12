@@ -1,7 +1,22 @@
 package main
 
-import "fmt"
+import (
+	"log"
+	"net/http"
+	"web/web1/app"
+
+	"github.com/urfave/negroni"
+)
 
 func main() {
-	fmt.Print("dd")
+
+	m := app.MakeHandler()
+	n := negroni.Classic()
+	n.UseHandler(m)
+
+	log.Println("Started App")
+	err := http.ListenAndServe(":3002", n)
+	if err != nil {
+		panic(err)
+	}
 }

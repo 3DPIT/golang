@@ -15,7 +15,7 @@ func main() {
 	n.UseHandler(m)
 
 	log.Println("Started App")
-	err := http.ListenAndServe(":3002", n)
+	err := http.ListenAndServe(":3005", n)
 	if err != nil {
 		panic(err)
 	}

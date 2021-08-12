@@ -658,3 +658,73 @@ func MakeHandler() http.Handler {
     })
 ```
 
+- 항목을 추가하는 부분이고 todos라는 핸들러를 만들어보자.
+
+## 3tier-web
+
+- 프론트, 백엔드, 디비를 만함
+
+```go
+var rd *render.Render
+
+type Todo struct {
+	ID        int       `json:"id"`
+	Name      string    `json:"name"`
+	Completed bool      `json:"completed"`
+	CreatedAt time.Time `json:"created_at"`
+}
+
+var todoMap map[int]*Todo
+
+func getTodoListHandler(w http.ResponseWriter, r *http.Request) {
+	list := []*Todo{}
+	for _, v := range todoMap {
+		list = append(list, v)
+	}
+	rd.JSON(w, http.StatusOK, list)
+}
+
+
+func MakeHandler() http.Handler {
+	todoMap = make(map[int]*Todo)
+	...
+}
+```
+
+- 위와 같이 추가를 해주고 나서 테스트 할 수있는 데이터를 넣자.
+
+```go
+func addTestTodos() {
+	todoMap[1] = &Todo{1, "Buy a milk", false, time.Now()}
+	todoMap[2] = &Todo{2, "Exercise", true, time.Now()}
+	todoMap[3] = &Todo{2, "Home work", false, time.Now()}
+}
+```
+
+- 위의 데이터를 확인해보자
+
+![image-20210813001442364](2021년08월11일_GoLangWeb-Todo웹.assets/image-20210813001442364.png)
+
+- 이렇게 데이터가 올라오는게 보임
+
+![image-20210813001508971](2021년08월11일_GoLangWeb-Todo웹.assets/image-20210813001508971.png)
+
+- 현재 이렇게 하면 완료 여부가 표시가 안되서 이부분을 추가하자.
+
+  ## todo.js 부분
+
+  ```js
+          var addItem = function(item) {
+              if (item.completed) {
+                  todoListItem.append("<li class='completed'><div class='form-check'><label class='form-check-label'><input class='checkbox' type='checkbox' checked='checked' />" + item.name + "<i class='input-helper'></i></label></div><i class='remove mdi mdi-close-circle-outline'></i></li>");
+              } else {
+                  todoListItem.append("<li><div class='form-check'><label class='form-check-label'><input class='checkbox' type='checkbox' />" + item.name + "<i class='input-helper'></i></label></div><i class='remove mdi mdi-close-circle-outline'></i></li>");
+              }
+          };ssssssssssssssssssssssssssssssss
+  ```
+
+  
+
+  
+
+  

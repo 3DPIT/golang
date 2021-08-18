@@ -24,7 +24,7 @@
   - [x] `20210809`[Go 로 만드는 웹 14 - EventSource 를 이용한 채팅](../05.GolangWeb/0809/2021년08월09일_GoLangWeb-EventSource를이용한채팅2.md)
   - [x] `20210810`[Go 로 만드는 웹 15 - OAuth 2.0](../05.GolangWeb/0810/01.OAuth2.0/2021년08월10일_GoLangWeb-OAuth2.0.md)
   - [x] `20210812`[Go 로 만드는 웹 16 - Todo 웹](../05.GolangWeb/0812/Todo웹1/2021년08월11일_GoLangWeb-Todo웹.md)
-  - [ ] Go 로 만드는 웹 17 - Todo 웹
+  - [x] `20210818`[Go 로 만드는 웹 17 - Todo 웹](../05.GolangWeb/0818/01.ToDoWeb2/2021년08월18일_GoLangWeb-ToDoWeb2.md)
   - [ ] Go 로 만드는 웹 18 - Refactoring
   - [ ] Go 로 만드는 웹 19 - SQLite3 설치
   - [ ] Go 로 만드는 웹 20 - SQL query

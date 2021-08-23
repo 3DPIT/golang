@@ -25,7 +25,7 @@
   - [x] `20210810`[Go 로 만드는 웹 15 - OAuth 2.0](../05.GolangWeb/0810/01.OAuth2.0/2021년08월10일_GoLangWeb-OAuth2.0.md)
   - [x] `20210812`[Go 로 만드는 웹 16 - Todo 웹](../05.GolangWeb/0812/Todo웹1/2021년08월11일_GoLangWeb-Todo웹.md)
   - [x] `20210818`[Go 로 만드는 웹 17 - Todo 웹](../05.GolangWeb/0818/01.ToDoWeb2/2021년08월18일_GoLangWeb-ToDoWeb2.md)
-  - [ ] Go 로 만드는 웹 18 - Refactoring
+  - [x] `20210823`[Go 로 만드는 웹 18 - Refactoring](../05.GolangWeb/0823/01.Refactoring/2021년08월23일_GoLangWeb-Refactoring.md)
   - [ ] Go 로 만드는 웹 19 - SQLite3 설치
   - [ ] Go 로 만드는 웹 20 - SQL query
   - [ ] Go 로 만드는 웹 21 - Login Page

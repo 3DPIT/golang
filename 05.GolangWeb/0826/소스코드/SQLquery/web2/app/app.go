@@ -76,3 +76,4 @@ func MakeHandler(filepath string) *AppHandler {
 	r.HandleFunc("/", a.indexHandler)
 
 	return a
+}

@@ -341,3 +341,6 @@ func (s *sqliteHandler) RemoveTodo(id int) bool {
 ```
 
 - 여기까지 제대로 실행됨을 확인
+
+- filedb로만들면 db가 꺼져도 데이터가 그대로 남아 있다.
+

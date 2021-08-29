@@ -12,7 +12,7 @@ import (
 
 	"web/web1/model"
 
-	"github.com/stretchr/testify/assert"
+	"stretchr/testify/assert"
 )
 
 func TestTodos(t *testing.T) {

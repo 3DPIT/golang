@@ -29,7 +29,7 @@
   - [x] `20210825`[Go 로 만드는 웹 19 - SQLite3 설치](../05.GolangWeb/0825/01.SQL3설치/2021년08월25일_GoLangWeb-SQLite3설치.md)
   - [x] `20210826`[Go 로 만드는 웹 20 - SQL query](../05.GolangWeb/0826/01.SQLquery/2021년08월26일_GoLangWeb-SQLquery.md)
   - [x] `20210829`[Go 로 만드는 웹 21 - Login Page](../05.GolangWeb/0829/01.LoginPage/2021년08월29일_GoLangWeb-LoginPage.md)
-  - [ ] Go 로 만드는 웹 22 - 세션별 데이터 저장
+  - [x] `20210829`[Go 로 만드는 웹 22 - 세션별 데이터 저장](../05.GolangWeb/0829/02.세션별데이터저장/2021년08월29일_GoLangWeb-세션별데이터저장.md)
   - [ ] Go 로 만드는 웹 23 - 배포
   - [ ] Go 로 만드는 웹 24 - Todos 배포
   - [ ] Go 로 만드는 웹 25 - PostgreDB 사용

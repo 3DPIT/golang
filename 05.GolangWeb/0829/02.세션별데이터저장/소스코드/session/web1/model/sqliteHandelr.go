@@ -13,7 +13,7 @@ type sqliteHandler struct {
 
 func (s *sqliteHandler) GetTodos(sessionId string) []*Todo {
 	todos := []*Todo{}
-	rows, err := s.db.Query("SELECT id, name, completed, createdAt FROM todos WHERE sessionId=?",sessionId)
+	rows, err := s.db.Query("SELECT id, name, completed, createdAt FROM todos WHERE sessionId=?", sessionId)
 	if err != nil {
 		panic(err)
 	}
@@ -24,7 +24,7 @@ func (s *sqliteHandler) GetTodos(sessionId string) []*Todo {
 		todos = append(todos, &todo)
 	}
 	return todos
-}s
+}
 
 func (s *sqliteHandler) AddTodo(name string, sessionId string) *Todo {
 	stmt, err := s.db.Prepare("INSERT INTO todos (sessionId, name, completed, createdAt) VALUES (?, ?, ?, datetime('now'))")
@@ -87,7 +87,7 @@ func newSqliteHandler(filepath string) DBHandler {
 			completed BOOLEAN,
 			createdAt DATETIME
 		);
-		CREATE INDEX IF NOT EXISTS sessionIdIndexOnTodos ON todos
+		CREATE INDEX IF NOT EXISTS sessionIdIndexOnTodos ON todos (
 			sessionId ASC
 		);`)
 	statement.Exec()

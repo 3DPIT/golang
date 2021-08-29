@@ -22,7 +22,7 @@ type AppHandler struct {
 	db model.DBHandler
 }
 
-var getSesssionID = func(r *http.Request) string {
+var getSessionID = func(r *http.Request) string {
 	session, err := store.Get(r, "session")
 	if err != nil {
 		return ""
@@ -41,13 +41,13 @@ func (a *AppHandler) indexHandler(w http.ResponseWriter, r *http.Request) {
 }
 
 func (a *AppHandler) getTodoListHandler(w http.ResponseWriter, r *http.Request) {
-	sessionId := getSesssionID(r)
+	sessionId := getSessionID(r)
 	list := a.db.GetTodos(sessionId)
 	rd.JSON(w, http.StatusOK, list)
 }
 
 func (a *AppHandler) addTodoHandler(w http.ResponseWriter, r *http.Request) {
-	sessionId := getSesssionID(r)
+	sessionId := getSessionID(r)
 	name := r.FormValue("name")
 	todo := a.db.AddTodo(name, sessionId)
 	rd.JSON(w, http.StatusCreated, todo)
@@ -93,7 +93,7 @@ func CheckSignin(w http.ResponseWriter, r *http.Request, next http.HandlerFunc) 
 	}
 
 	// if user already signed in
-	sessionID := getSesssionID(r)
+	sessionID := getSessionID(r)
 	if sessionID != "" {
 		next(w, r)
 		return

@@ -10,13 +10,12 @@ import (
 	"strconv"
 	"testing"
 
-	"web/web1/model"
-
-	"stretchr/testify/assert"
+	"github.com/stretchr/testify/assert"
+	"github.com/tuckersGo/goWeb/web22/model"
 )
 
 func TestTodos(t *testing.T) {
-	getSesssionID = func(r *http.Request) string {
+	getSessionID = func(r *http.Request) string {
 		return "testsessionId"
 	}
 	os.Remove("./test.db")

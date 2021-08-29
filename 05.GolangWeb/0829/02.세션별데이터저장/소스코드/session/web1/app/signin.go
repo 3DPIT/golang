@@ -18,12 +18,12 @@ import (
 
 type GoogleUserId struct {
 	ID            string `json:"id"`
-	Email         string `json:"email`
+	Email         string `json:"email"`
 	VerifiedEmail bool   `json:"verified_email"`
-	Picture       string `json:"picture`
+	Picture       string `json:"picture"`
 }
 
-var googleOauthConfig = &oauth2.Config{
+var googleOauthConfig = oauth2.Config{
 	RedirectURL:  "http://localhost:3000/auth/google/callback",
 	ClientID:     os.Getenv("GOOGLE_CLIENT_ID"),
 	ClientSecret: os.Getenv("GOOGLE_SECRET_KEY"),
@@ -65,7 +65,7 @@ func googleAuthCallback(w http.ResponseWriter, r *http.Request) {
 		return
 	}
 
-	// Id 정보 세션 쿠기에 저장
+	// Store Id info into Session cookie
 	var userInfo GoogleUserId
 	err = json.Unmarshal(data, &userInfo)
 	if err != nil {
@@ -74,12 +74,13 @@ func googleAuthCallback(w http.ResponseWriter, r *http.Request) {
 		return
 	}
 	session, err := store.Get(r, "session")
-	// Set some session values.
 	if err != nil {
 		http.Error(w, err.Error(), http.StatusInternalServerError)
 		return
 	}
-	session.Values["ID"] = userInfo.ID
+
+	// Set some session values.
+	session.Values["id"] = userInfo.ID
 	// Save it before we write to the response/return from the handler.
 	err = session.Save(r, w)
 	if err != nil {

@@ -10,7 +10,7 @@
 
 ![image-20210829164513617](2021년08월29일_GoLangWeb-세션별데이터저장.assets/image-20210829164513617.png)
 
-## AddTodo
+## sqliteHandler.go | AddTodo
 
 ```go
 func (s *sqliteHandler) AddTodo(name string, sessionId string) *Todo {
@@ -34,7 +34,7 @@ func (s *sqliteHandler) AddTodo(name string, sessionId string) *Todo {
 
 - 위와 같이 sessionId를 추가함
 
-## GetTodos
+## sqliteHandler.go | GetTodos
 
 ```go
 func (s *sqliteHandler) GetTodos(sessionId string) []*Todo {
@@ -205,3 +205,4 @@ func TestTodos(t *testing.T) {
 - 여기서 signin.html을 signin으로 변경
 
 - 이렇게 잘하면 두개 인터넷 창에서도 실행이 가능하다.
+

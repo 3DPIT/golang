@@ -21,7 +21,7 @@ type GoogleUserId struct {
 	Email         string `json:"email"`
 	VerifiedEmail bool   `json:"verified_email"`
 	Picture       string `json:"picture"`
-} //
+}
 
 var googleOauthConfig = oauth2.Config{
 	RedirectURL:  os.Getenv("DOMAIN_NAME") + "/auth/google/callback",

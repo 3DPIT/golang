@@ -4,7 +4,7 @@ go 1.16
 
 require (
 	github.com/gorilla/mux v1.8.0
-	github.com/gorilla/sessions v1.2.1
+	github.com/gorilla/s v1.2.1
 	github.com/mattn/go-sqlite3 v1.14.8
 	github.com/stretchr/testify v1.7.0
 	github.com/tuckersGo/goWeb v0.0.0-20200531032145-28d77cfd0a29

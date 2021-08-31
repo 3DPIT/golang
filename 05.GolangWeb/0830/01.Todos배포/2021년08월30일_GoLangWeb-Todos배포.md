@@ -210,7 +210,7 @@ git push heroku master
 - 한글로 되어있는 부분은 사용자마다 다름 잘 확인 할것
 
 ```go
-heroku buildpacks:set https://github.com/heroku/heroku-buildpack-nodejs
+heroku buildpacks:set https://shielded-brook-07447.herokuapp.com
 ```
 
 ![image-20210830233458343](2021년08월30일_GoLangWeb-Todos배포.assets/image-20210830233458343.png)

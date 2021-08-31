@@ -1,6 +1,6 @@
-## Go Lang Web학습 계획
+## Go Lang Web학습 계획 (완료)
 - 기간 
-  -  2021-07-25(일) ~ 2021-08-dd(w)
+  -  2021-07-25(일) ~ 2021-08-31(화)
 - 최종 목표 
   - 고랭 서버 구축해서 restful API 만들어 Todo리스트 배포 
   - 이것을 응용해서 내가 만들고 싶은 웹또는 앱 만들기  
@@ -31,6 +31,6 @@
   - [x] `20210829`[Go 로 만드는 웹 21 - Login Page](../05.GolangWeb/0829/01.LoginPage/2021년08월29일_GoLangWeb-LoginPage.md)
   - [x] `20210829`[Go 로 만드는 웹 22 - 세션별 데이터 저장](../05.GolangWeb/0829/02.세션별데이터저장/2021년08월29일_GoLangWeb-세션별데이터저장.md)
   - [x] `20210829`[Go 로 만드는 웹 23 - 배포](../05.GolangWeb/0829/03.배포/2021년08월29일_GoLangWeb-배포.md)
-  - [ ] Go 로 만드는 웹 24 - Todos 배포
-  - [ ] Go 로 만드는 웹 25 - PostgreDB 사용
-  - [ ] Go 로 만드는 웹 26 - WebSocket 1
+  - [x] `20210830`[Go 로 만드는 웹 24 - Todos 배포](../05.GolangWeb/0830/01.Todos배포/2021년08월30일_GoLangWeb-Todos배포.md)
+  - [x] `20210831`[Go 로 만드는 웹 25 - PostgreDB 사용](../05.GolangWeb/0831/01.postgreDB/2021년08월31일_GoLangWeb-postgreDB.md)
+  - [ ] ~~Go 로 만드는 웹 26 - WebSocket 1~~

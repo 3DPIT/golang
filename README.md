@@ -1,7 +1,8 @@
 # Golang을 위주로 정리   
 
+## [00.GolangAlgorithm](./00.GolangAlgorithm/)
+- 고랭 
 ## [01.GolangStudy](./01.GolangStudy/)
-
 - Head First Go 책 학습 내용   
 ## [02.lsBeat](./02.lsBeat/)
 - lsBeat구현을 위한 내용 자료

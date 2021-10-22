@@ -1,7 +1,7 @@
 # Golang을 위주로 정리   
 
 ## [00.GolangAlgorithm](./00.GolangAlgorithm/)
-- 고랭 
+- 고랭 알고리즘 기록
 ## [01.GolangStudy](./01.GolangStudy/)
 - Head First Go 책 학습 내용   
 ## [02.lsBeat](./02.lsBeat/)

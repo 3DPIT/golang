@@ -16,6 +16,7 @@ var (
 	reader       *bufio.Reader = bufio.NewReader(os.Stdin)
 	writer       *bufio.Writer = bufio.NewWriter(os.Stdout)
 	chicken      []Data
+	D            []int
 )
 
 func printf(f string, a ...interface{}) { fmt.Fprintf(writer, f, a...) }
@@ -32,8 +33,17 @@ func inits() {
 		}
 	}
 }
-func dfs(int idx, int cnt) {
-
+func dfs(idx, cnt int) {
+	if idx >= len(chicken) {
+		return
+	}
+	if cnt == m {
+		fmt.Println(D)
+		return
+	}
+	D = append(D, idx)
+	dfs(idx+1, cnt+1)
+	D = D[:len(D)-1]
 }
 func main() {
 	defer writer.Flush()
